@@ -1,0 +1,28 @@
+#header {
+	border: 5px solid black;
+	width: 100%;
+}
+td h1 {
+	font-family: serif;
+	margin: auto;
+	text-align: center;
+}
+nav {
+	width: 100%;
+	border: 1px solid black;
+}
+.nav {
+	margin-left: auto;
+	margin-right: auto;
+}
+a:link {
+	text-decoration: none; 
+}
+a:hover {
+	color: crimson;
+	text-decoration: none;
+}
+a:visited {
+	color: gray;
+	text-decoration: underline;
+}
