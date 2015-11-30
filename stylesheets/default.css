@@ -1,6 +1,10 @@
+header {
+	display: block;
+}
 #header {
 	border: 5px solid black;
 	width: 100%;
+	background-color: #c83426;
 }
 td h1 {
 	font-family: serif;
@@ -10,19 +14,54 @@ td h1 {
 nav {
 	width: 100%;
 	border: 1px solid black;
+	margin-top: 1em;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border-radius: 1em;
 }
-.nav {
-	margin-left: auto;
-	margin-right: auto;
+#a1 {
+	float: left;
+	padding-left: 5px;
+}
+#a2 {
+	margin-right: 26em;
+	margin-left: 26em;
+}
+#a3 {
+	margin-right: 26em;
+}
+#a4 {
+	float: right;
+	padding-right:5px;
 }
 a:link {
-	text-decoration: none; 
-}
-a:hover {
-	color: crimson;
 	text-decoration: none;
 }
-a:visited {
-	color: gray;
+a:hover {
+	color: #c83426;
 	text-decoration: underline;
+}
+a:visited {}
+#mainbody {
+	height: 30em;
+	width: 70%;
+	display: inline-block;
+	margin-top: 1em;
+}
+aside {
+	border: 1px solid black;
+	display: inline-block;
+	margin-top: 1em;
+	height: 30em;
+	width: 13em;
+	float: right;
+	padding-left: 5px;
+	background-color: #a0b0ad;
+	border-radius: 1em;
+}
+footer {
+	border: 1px solid black;
+	margin-top: 1em;
+	padding-left: 5px;
+	border-radius: 1em;
 }
