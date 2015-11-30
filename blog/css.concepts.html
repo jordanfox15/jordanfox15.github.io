@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Boxes</title>
+    <link type="text.css" rel="stylesheet" href="../stylesheets/default.css"/>
+    <link type="text.css" rel="stylesheet" href="../stylesheets/blog.css"/>
+  </head>
+  <body>
+    <h1>Margin, Border and Padding</h1>
+    <h2>Or defining your element</h2>
+    <h4>11/29/15</h4>
+    <article>
+      <p>
+        To define these style elements the best place to start is in the middle.  Just from the word "Border", you already have a pretty good idea of what this element is.  If you are already familiar with the idea that all individual elements on an HTML page are boxes, the border is a line surrounding that box.  However borders do not have to be visible.  All content has a border whether we can see it or not.  Just look at the bottom of the screen and you will see an example of a border around the copyright.  Directly below you will see the CSS code that styles this element of the page.
+        <pre>footer {
+      border: 1px solid black;
+      margin-top: 1em;
+      padding-left: 5px;
+      border-radius: 1em;
+        }</pre>
+        As you can see the border is a very simple 1 pixel solid lined black color border.  In this example I have also used Margin and Padding stylings which I will describe next.
+      </p>
+      <p>
+         In our previous example we can see the border.  The content of this element is the text.  The reason I said we should start in the middle is because Margin and Padding are basically the same thing, just on different sides of the border.  So... Padding is the space between the content of an element, and its border.  The larger the padding of an element, the larger the element, and the farther away the border is from the content.  In the previous example I have only put padding on the left side of the element at 5 pixels.  This moves the content (the text) 5 pixels away from the left border.  Without this styling, the C in Copyright would be touching the visible border.
+      </p>
+      <p>
+        Finally we have Margin.  Margin is the space between the border and the very edge of an element.  So the larger the margin the larger the element and the farther away the edge of the element is from its border.  In our example I have put a 1em margin on the top of my footer element.  This has the effect of making this blue text element and the footer element seem like they are separated.  In reality, the text "box" is sitting directly on the footer "box".  If I removed all the margins on the page this would become evident.  So hopefully this has given you a good idea of what these 3 elements are and what they do.
+      </p>
+    </article>
+    <footer>
+        Copyright @ blah blah blah
+    </footer>
+  </body>
+</html>
