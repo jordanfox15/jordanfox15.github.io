@@ -7,3 +7,15 @@
 #bloglinks {
 	height: 30em;
 }
+article {
+	background-color: #5d8cc2;
+	border-radius: 1em;
+	padding-left: .5em;
+	padding-right: .5em;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	font-family: cursive;
+}
+p {
+	text-indent: 1em;
+}
