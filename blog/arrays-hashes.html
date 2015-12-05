@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Arrays and Hashes</title>
+    <link type="text.css" rel="stylesheet" href="../stylesheets/default.css"/>
+    <link type="text.css" rel="stylesheet" href="../stylesheets/blog.css"/>
+  </head>
+  <body>
+    <h1>Arrays and Hashes</h1>
+    <h2>Or Storage and Access</h2>
+    <h4>12/4/15</h4>
+    <article>
+      <p>
+        Arrays an hashes are, in simplest terms, ways to store a group of information.  Once your array or hash is full of the information you want it to store, you can access that information for use later in your program.  You can also add, delete and alter the stored information at any time making arrays and hashes a powerful tool for programming.
+      </p>
+      <p>
+         I will start by explaining the simpler of the two, arrays.  You can think of an array of a list of items, and just like a written list the first piece of information you add goes in the first spot, the second in the second and so on.  As I said before you can edit your array to change what spot the information is in, but the important thing to remember is that the place the information takes in the array is how you access it.  Below I have a sample block of code that gives you an example of one way to create an array and how to access the information inside.
+         <pre><code class="language-Ruby">
+          array = [1,2,3,"one", "two", "three"]
+          array[4]
+         </code></pre>
+         Arrays can hold pretty much any information, including other arrays, but in this example we have 6 pieces of information; 3 integers and 3 strings.  On the second line we see how we access the information.  As I said information is accessed by where that info is in the array.  Also one thing to note is that in programming we start counting at zero instead of one.  So what that second line says is that we are accessing the 5th piece of information in the array, or the string, "two".
+      </p>
+      <p>
+        Hashes are very similar to arrays.  The biggest difference is that we are storing two pieces of information, where the first is pointing at and referencing the second.  We call the first piece a key, and the second a value.  You can think of the key like the "4" in "array[4]".  Except that it can be anything you want it to be, just like the value.  Here is an example of one way to create a hash and how to access information inside it.
+        <pre><code class="language-Ruby">
+          hash = {
+          "first" => 1,
+          "second" => 2,
+          "third" => 3,
+          :fourth => "one",
+          :fifth => "two",
+          :sixth => "three"
+          }
+          hash[fifth]
+         </code></pre>
+         In this example the values are the same as the information we had stored in our array.  I have set the keys to a mix of strings and objects.  On the bottom line I have accessed the same information we did from the array, the difference of course is that we need to use the key to access it instead of the place where it resides.  The major benefit of using hashes instead of arrays, besides setting our own keys, is that the keys themselves are pieces of information that can be accessed and used.  And these are the basics of arrays an hashes.
+      </p>
+    </article>
+    <footer>
+        Copyright @ blah blah blah
+    </footer>
+  </body>
+</html>
