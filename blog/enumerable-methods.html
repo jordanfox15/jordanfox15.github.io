@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Enumerable Map Method</title>
+    <link type="text.css" rel="stylesheet" href="../stylesheets/default.css"/>
+    <link type="text.css" rel="stylesheet" href="../stylesheets/blog.css"/>
+  </head>
+  <body>
+    <h1>Enumerable: The Map Method</h1>
+    <h2>Or How to Change Everything</h2>
+    <h4>12/13/15</h4>
+    <article>
+      <p>
+        The enumerable method map can be very useful.  In general terms, using this method will change every element in the collection you call it on.  You can either specify a block of code to define how each element will be changed, or if no code block is given, the method will simply change every element to the value specified.  Lets see how this would work.
+      </p>
+      <p>
+         In this example I have created two arrays.  I then have altered these arrays with the map method.  At the bottom you can see what the output of these method calls would be.  As you can see, the effect of calling .map is that every element of the array is iterated through, performing the calculation specified in the code block.  When I haven't given a code block, it simply changes all elements to the value I have given, or the integer 10.
+         <pre><code class="language-Ruby">
+          ar = [1, 2, 3, 4, 5]
+          ar2 = ["cat", "dog", "mouse"]
+
+          ar.map {|x| x + 5}
+          ar.map { 10 }
+          ar2.map {|y| y + "!"}
+          ar2.map { 10 }
+
+          [6, 7, 8, 9, 10]
+          [10, 10, 10, 10, 10]
+          ["cat!", "dog!", "mouse!"]
+          [10, 10, 10]
+         </code></pre>
+         As you can see, if you ever want to change every element in your collection the same way, the map method is the way to go.
+      </p>
+    </article>
+    <footer>
+        Copyright @ blah blah blah
+    </footer>
+  </body>
+</html>
