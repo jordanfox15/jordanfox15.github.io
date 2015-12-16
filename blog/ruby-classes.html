@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Ruby Classes</title>
+    <link type="text.css" rel="stylesheet" href="../stylesheets/default.css"/>
+    <link type="text.css" rel="stylesheet" href="../stylesheets/blog.css"/>
+  </head>
+  <body>
+    <h1>Ruby Classes</h1>
+    <h2>Or Real World Object Modeling</h2>
+    <h4>12/15/15</h4>
+    <article>
+      <p>
+        Ruby class creation is a great tool for your coding repertoire. Ruby comes with a number of classes (string, integer, object) with many methods already built in to manipulate them.  In this post I will show you how to build you own classes and why they are helpful.
+      </p>
+      <p>
+         When you create your own class, it acts just like the already built in classes.  You can create a new instance of the class with .new.  You can also create your own methods inside of the class that can be called with class.method.  These are called instance methods.  They only exist and operate inside of your created class.  As you should already know, variables inside methods, or local variables, only exist inside of the method and disappear as soon as the method is finished.  However in classes, you can create instance variables which exist inside the class and never lose their assignment, and therefore can be passed in and out of methods.  Take a look at this code modeling a real world object.  Specifically a die.
+         <pre><code class="language-Ruby">
+          class Die
+            def initialize(sides)
+              @sides = sides
+            end
+
+            attr_reader :sides
+
+            def roll
+              return rand(@sides) + 1
+             end
+          end
+         </code></pre>
+      </p>
+      <p>
+        As you can see I have a class Die which, when initialized, will take an argument "sides", that will represent how many sides our die will have.  The special method "initialize" will perform its code block every time a new instance of our class is initialized.  Inside this we see our first instance variable "@sides".  All instance variables start with the special character "@".  This variable can and is used inside of our other two code blocks which are instance methods.  You can probably see what the bottom method is going to do, it models a real world roll of the die we have created.  However the code block in the middle is probably confusing.  Attr_ methods are specific to classes and are a way for Ruby to minimize code and repetition.  In this case we have used attr_reader because all we want from this method is to tell us how many sides our die has.  This code is equivalent to
+        <pre><code class="language-Ruby">
+          def sides
+            return @sides
+          end
+        </code></pre>
+      </p>
+      <p>
+        Now that we have our class defined we can start to use it.
+        <pre><code class="language-Ruby">
+          sixdie = Die.new(6)
+          sixdie.sides
+          =>6
+          sixdie.roll
+          =>random number between 1 and 6.
+        </code></pre>
+        First I create a new instance of my class in sixdie.  Then I call our two methods and show you the result of each.  This is a very simple object to model, but as you can see classes can be used to model very complex objects as well.  As long as you can code it that is.
+      </p>
+    </article>
+    <footer>
+        Copyright @ blah blah blah
+    </footer>
+  </body>
+</html>
