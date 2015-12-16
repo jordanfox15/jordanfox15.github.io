@@ -8,8 +8,8 @@ header {
 }
 td h1 {
 	font-family: serif;
-	margin: auto;
 	text-align: center;
+	padding-right: 5em;
 }
 nav {
 	width: 100%;
@@ -34,12 +34,10 @@ nav {
 	padding-right:5px;
 	float: right;
 }
-a:link {
-	text-decoration: none;
-}
+a:link {}
 a:hover {
 	color: #c83426;
-	text-decoration: underline;
+	text-decoration: none;
 }
 a:visited {}
 #mainbody {
@@ -71,4 +69,22 @@ h3 {
 }
 .contimg {
 	height: 5em;
+}
+#aboutbody {
+	height: 40em;
+	width: 98%;
+	background-color: black;
+	margin-bottom: -1em;
+	color: white;
+	padding-top: 1px;
+	padding-left: 2%;
+}
+div h2 {
+	display: inline;
+}
+.aboutinfo {
+	color: white;
+}
+span {
+	color: blue;
 }
