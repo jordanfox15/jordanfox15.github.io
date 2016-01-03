@@ -19,3 +19,7 @@ article {
 p {
 	text-indent: 1em;
 }
+.emph {
+	font-style: italic;
+	color: black;
+}
