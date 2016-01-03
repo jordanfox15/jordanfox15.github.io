@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>JavaScript Objects</title>
+    <link type="text.css" rel="stylesheet" href="../stylesheets/default.css"/>
+    <link type="text.css" rel="stylesheet" href="../stylesheets/blog.css"/>
+  </head>
+  <body>
+    <h1>JavaScript Objects vs. Ruby Hashes</h1>
+    <h2>Or Similar Storage Systems</h2>
+    <h4>1/3/16</h4>
+    <article>
+      <p>
+        JavaScript and Ruby are very similar languages in some respects.  However there are a few fundamental differences.  Those we are not going to talk about today.  Today we will be talking about one of the smaller differences, JavaScript Objects and Ruby Hashes.
+      </p>
+      <p>
+         Up to this point you are familiar with Ruby.  In both Ruby and JavaScript the storage system Array takes the same name.  However the closest correlation to a Hash in Ruby is called an Object in JavaScript.  This can be confusing since in Ruby <span class="emph">everything</span> is an object.  Let's start with an example of how you declare these.  In Ruby a Hash is initialized like this:
+         <pre><code class="language-Ruby">
+          hash = {
+            one: 1,
+            two: 2,
+           three: 3
+          }
+         </code></pre>
+         There are of course a few different ways to declare a Hash in Ruby, I chose this one because it is the closest to an Object declaration in JavaScript.  Take a look at this:
+         <pre><code class="language-JavaScript">
+          var object = {
+            one: 1,
+            two: 2,
+            three: 3
+          };
+        </code></pre>
+        Except for the <span class="emph">var</span> they look identical don't they.  Well, not quite.
+      </p>
+      <p>
+        In JavaScript, the Ruby key/value pair is called a name/value pair, which together are called the properties of the object.  Although the value can be accessed in both languages using square bracket notation, in JavaScript you can also access the value by using this notation:
+        <pre><code class="language-JavaScript">
+          object.one
+          // => 1
+        </code></pre>
+        which resembles a method call in Ruby.  These two different ways to access an object brings up probably the major difference between Hashes and Objects.  When you use the dot notation the word after the dot has to be an exact property name.  But using square brackets notation is not the same in Ruby and JavaScript. In Ruby it is simply the default way to access a Hash an looks for what you wrote in the brackets.  In JavaScript however, the language takes the expression inside the brackets and <span class="emph">evaluates it</span> then tries to look up the name using the result.  This aspect creates some fundamental differences between Hashes and Objects.
+      </p>
+    </article>
+    <footer>
+        Copyright @ blah blah blah
+    </footer>
+  </body>
+</html>
